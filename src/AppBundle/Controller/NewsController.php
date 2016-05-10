@@ -28,4 +28,18 @@ class NewsController extends Controller
 	    // exit;
         return $this->render('news/index.html.twig',['news'=>'ddd word']);
     }
+    /**
+     * @Route("/create");
+     */
+    public function createAction()
+    {
+        return $this->render('news/create.html.twig');
+    }
+    /**
+     * @Route("/edit");
+     */
+    public function editAction()
+    {
+        return $this->render('news/edit.html.twig');
+    }
 }

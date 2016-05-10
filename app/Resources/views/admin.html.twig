@@ -1,14 +1,115 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8" />
-        <title>{% block title %} admin! {% endblock %}</title>
+
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <title>{% block title %} admin! {% endblock %}</title>
+
+
+    <link href="/bundles/framework/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/bundles/framework/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="/bundles/framework/css/plugins/iCheck/custom.css" rel="stylesheet">
+
+    
+
+    <link href="/bundles/framework/css/animate.css" rel="stylesheet">
+    <link href="/bundles/framework/css/style.css" rel="stylesheet">
+    <link href="/bundles/framework/css/plugins/datapicker/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link href="/bundles/framework/css/plugins/steps/jquery.steps.css" rel="stylesheet">
+    <link href="/bundles/framework/css/plugins/steps/jquery.steps.css" rel="stylesheet">
+    <link href="/bundles/framework/css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="/bundles/framework/css/plugins/summernote/summernote.css" rel="stylesheet">
+    <link href="/bundles/framework/css/plugins/summernote/summernote-bs3.css" rel="stylesheet">
+    
+        
        
-        {% block stylesheets %}
+{% block stylesheets %}
 {% endblock %}
-    </head>
+</head>
     <body>
+        
+<div id="wrapper">
+
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav" id="side-menu">
+                <li class="nav-header">
+                    <div class="dropdown profile-element">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">测试管理系统</strong>
+                             </span> <span class="text-muted text-xs block">demos <b class="caret"></b></span> </span> </a>
+                        <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                            <li><a href="#">退出系统</a></li>
+                        </ul>
+                    </div>
+                    <div class="logo-element">
+                        IN+
+                    </div>
+                </li>
+             
+
+                        <li class="userclick" >
+                            <a href="/news/index"><i class="fa fa-user-md"></i> <span class="nav-label">消息管理</span></a>
+                        </li>
+                 
+            </ul>
+
+        </div>
+    </nav>
+
+    <div id="page-wrapper" class="gray-bg">
+        <div class="row border-bottom">
+            <nav class="navbar navbar-static-top white-bg" role="navigation" style="margin-bottom: 0">
+
+                <ul class="nav navbar-top-links navbar-right">
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-sign-out"></i> 退出系统
+                        </a>
+                    </li>
+                </ul>
+
+            </nav>
+        </div>
+
         {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+        <div class="footer">
+            <div class="pull-right">
+                <small><a href="https://github.com/fanyoujian" target="_blank">技术支持</a></small>
+            </div>
+            <div>
+                <small>Copyright (C) <?php echo date("Y", time()); ?> by fanyoujian Communications. All Rights Reserved.</small>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+        <script src="/bundles/framework/js/jquery-2.1.1.js"></script>
+        <!-- Mainly scripts -->
+		<script src="/bundles/framework/js/bootstrap.min.js"></script>
+		<script src="/bundles/framework/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+		<script src="/bundles/framework/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+		<script src="/bundles/framework/js/plugins/datapicker/bootstrap-datetimepicker.min.js"></script>
+		<script src="/bundles/framework/js/plugins/datapicker/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
+		<!-- Steps -->
+		<script src="/bundles/framework/js/plugins/staps/jquery.steps.min.js"></script>
+		<!-- Custom and plugin javascript -->
+		<script src="/bundles/framework/js/inspinia.js"></script>
+		<script src="/bundles/framework/js/plugins/pace/pace.min.js"></script>
+		<!-- iCheck -->
+		<script src="/bundles/framework/js/plugins/iCheck/icheck.min.js"></script>
+		<!-- Steps -->
+		<script src="/bundles/framework/js/plugins/staps/jquery.steps.min.js"></script>
+		<!-- SUMMERNOTE -->
+		<script src="/bundles/framework/js/plugins/summernote/summernote.min.js"></script>
+ {% block javascripts %}
+        {% endblock %}
+
     </body>
 </html>
+<!DOCTYPE html>
