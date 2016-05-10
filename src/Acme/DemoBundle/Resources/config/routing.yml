@@ -1,0 +1,13 @@
+# random:
+#     path:     /random/{limit}
+#     defaults: { _controller: AcmeDemoBundle:Random:random }
+#   	path:     /random/index
+#   	defaults: { _controller: AcmeDemoBundle:Random:index }
+#     # path:     /index
+#     # defaults: { _controller: AcmeDemoBundle:Random:index }
+#     # path:     /hello
+#     # defaults: { _controller: AcmeDemoBundle:Random:hello }
+random:
+    resource: "@AcmeDemoBundle/Controller/"
+    type:     annotation
+    prefix:   /random

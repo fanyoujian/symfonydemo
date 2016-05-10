@@ -1,0 +1,25 @@
+{% extends 'admin.html.twig' %}
+{% block stylesheets %}
+<link href="/bundles/framework/css/test.css" type="text/css" rel="stylesheet" />
+
+{% endblock %}
+
+{% block body %}
+    <div id="wrapper">
+        <div id="container">
+            <div id="welcome">
+               
+            </div>
+
+            <div id="status">
+                <p>
+                   {{news}}
+                </p>
+            </div>
+
+        </div>
+    </div>
+{% endblock %}
+{% block javascripts %}
+<script type="text/javascript" src="/bundles/framework/js/test.js"></script>
+{% endblock %}
