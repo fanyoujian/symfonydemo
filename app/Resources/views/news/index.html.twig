@@ -49,29 +49,27 @@
                                     <tr>
 
                                         <th>编号</th>
-                                        <th>类型名称</th>
+                                        <th>名称</th>
                                      
-                                        <th>添加时间 </th>
                                         <th>操作</th>
 
                                     </tr>
                                     </thead>
                                     <tbody>
                                    
+                                   {% for news in newses %}
                                     <tr>
-                                        <td>1</td>
-                                        <td>222</td>
+                                        <td>{{news.id}}</td>
+                                        <td>{{news.title}}</td>
                                       
                                         <td><span class="pie">232323</span></td>
 
                                         <td>
                                            
-                                           sss
-
-                                           
                                            
                                         </td>
                                     </tr>
+                                    {% endfor %}
                                     </tbody>
                                 </table>
                             </div>

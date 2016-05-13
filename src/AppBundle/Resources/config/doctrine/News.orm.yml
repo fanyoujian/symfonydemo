@@ -12,12 +12,7 @@ AppBundle\Entity\News:
         title:
             type: string
             length: 255
-        status:
-            type: integer
-        createdAt:
-            type: datetime
-            column: created_at
-        updatedAt:
-            type: datetime
-            column: updated_at
+        banner_url:
+            type: string
+            length: 255
     lifecycleCallbacks: {  }

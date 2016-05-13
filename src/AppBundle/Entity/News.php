@@ -18,20 +18,31 @@ class News
     private $title;
 
     /**
-     * @var int
+     * @var string
      */
-    private $status;
+    private $banner_url;
+
 
     /**
-     * @var \DateTime
+     * Get banner_url
+     * @return string
      */
-    private $createdAt;
+    public function getBanenrUrl()
+    {
+        return $this->banner_url;
+    }
 
     /**
-     * @var \DateTime
+     * Set banner_url
+     *
+     * @param string $banner_url
+     *
+     * @return News
      */
-    private $updatedAt;
-
+    public function setBannerUrl($banerurl)
+    {
+        $this->banner_url = $banerurl;
+    }
 
     /**
      * Get id
@@ -67,76 +78,6 @@ class News
         return $this->title;
     }
 
-    /**
-     * Set status
-     *
-     * @param integer $status
-     *
-     * @return News
-     */
-    public function setStatus($status)
-    {
-        $this->status = $status;
-
-        return $this;
-    }
-
-    /**
-     * Get status
-     *
-     * @return int
-     */
-    public function getStatus()
-    {
-        return $this->status;
-    }
-
-    /**
-     * Set createdAt
-     *
-     * @param \DateTime $createdAt
-     *
-     * @return News
-     */
-    public function setCreatedAt($createdAt)
-    {
-        $this->createdAt = $createdAt;
-
-        return $this;
-    }
-
-    /**
-     * Get createdAt
-     *
-     * @return \DateTime
-     */
-    public function getCreatedAt()
-    {
-        return $this->createdAt;
-    }
-
-    /**
-     * Set updatedAt
-     *
-     * @param \DateTime $updatedAt
-     *
-     * @return News
-     */
-    public function setUpdatedAt($updatedAt)
-    {
-        $this->updatedAt = $updatedAt;
-
-        return $this;
-    }
-
-    /**
-     * Get updatedAt
-     *
-     * @return \DateTime
-     */
-    public function getUpdatedAt()
-    {
-        return $this->updatedAt;
-    }
+   
 }
 
