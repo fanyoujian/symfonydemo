@@ -59,4 +59,14 @@ class LoginController extends Controller
         }
         return $this->redirect($this->generateUrl('login_index'), 301);
     }
+
+    /**
+     * @Route("/logout",name="login_logout");
+     */
+    public function logOut(Request $request)
+    {
+        $session = $request->getSession();
+        $session->clear();
+        return $this->redirect($this->generateUrl('login_index'), 301);
+    }
 }
