@@ -1,0 +1,44 @@
+{% extends 'admin.html.twig' %}
+
+
+{% block body %}
+<div class="row wrapper border-bottom white-bg page-heading">
+        <div class="col-lg-12">
+         <h1>{{groups.title}}</h1>
+            <ol class="breadcrumb">
+                <li>
+                    <a href="/groups/index">groups管理</a>
+                </li>
+                <li>
+                    <a href="">groups编辑</a>
+                </li>
+
+            </ol>
+        </div>
+    </div>
+ <div class="ibox-content">
+   
+    <form method="post" class="form-horizontal" enctype = "multipart/form-data" action="/groups/update" >
+   
+    <input type="hidden" name="id" value="{{groups.id}}" class="form-control">
+
+        <div class="form-group">
+            <label class="col-sm-2 control-label">名称</label>
+
+        <div class="col-sm-6">
+            <input type="text" name="title" value="{{groups.title}}" class="form-control"></div>
+        </div>
+       
+      
+       
+        <div class="hr-line-dashed"></div>
+       
+        
+        <div class="form-group">
+            <div class="col-sm-4 col-sm-offset-2">
+                <button class="btn btn-primary" type="submit">保存</button>
+            </div>
+        </div>
+   </form>
+</div>
+    {% endblock %}

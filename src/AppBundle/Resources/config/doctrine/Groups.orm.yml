@@ -1,0 +1,17 @@
+AppBundle\Entity\Groups:
+    type: entity
+    table: null
+    repositoryClass: AppBundle\Repository\GroupsRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        title:
+            type: string
+            length: 255
+        status:
+            type: integer
+    lifecycleCallbacks: {  }

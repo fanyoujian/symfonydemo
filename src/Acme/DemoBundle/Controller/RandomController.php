@@ -22,6 +22,8 @@ class RandomController extends Controller
     {
     	$number = rand(1, $limit);
 
+        echo $number;exit;
+
         return $this->render(
             'AcmeDemoBundle:Random:index.html.twig',
             array('number' => $number)
