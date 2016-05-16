@@ -1,0 +1,60 @@
+{% extends 'admin.html.twig' %}
+
+
+{% block body %}
+<div class="row wrapper border-bottom white-bg page-heading">
+        <div class="col-lg-12">
+         <h1>{{$banners->title}}</h1>
+            <ol class="breadcrumb">
+                <li>
+                    <a href="">banner管理</a>
+                </li>
+                <li>
+                    <a href="">编辑</a>
+                </li>
+
+            </ol>
+        </div>
+    </div>
+ <div class="ibox-content">
+   
+    <form method="post" class="form-horizontal" enctype = "multipart/form-data" action="cdcd">
+   
+        <div class="form-group">
+            <label class="col-sm-2 control-label">名称</label>
+
+        <div class="col-sm-6">
+            <input type="text" name="title" value="21212" class="form-control"></div>
+        </div>
+         <div class="hr-line-dashed"></div>
+            <div class="form-group">
+            <label class="col-sm-2 control-label">类型选择</label>
+            <div class="col-sm-6">
+            <select class="form-control" name="bannertypeid" id="bannertypeid">
+             
+                    <option value="1">cdscsdc</option>
+              
+            </select>
+            </div>
+            </div>
+      
+        <div class="hr-line-dashed"></div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">更改图片</label>
+                <div class="col-sm-10">
+                    <input type="file" value="" name="file" />
+                    <span class="help-block m-b-none">请上传414*140 大小 的图片 ，仅支持jpg,jpeg,png格式</span>
+                </div>
+
+        </div>
+        <div class="hr-line-dashed"></div>
+       
+        
+        <div class="form-group">
+            <div class="col-sm-4 col-sm-offset-2">
+                <button class="btn btn-primary" type="submit">保存</button>
+            </div>
+        </div>
+   </form>
+</div>
+    {% endblock %}

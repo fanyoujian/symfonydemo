@@ -1,0 +1,27 @@
+AppBundle\Entity\UsersGroups:
+    type: entity
+    table: null
+    repositoryClass: AppBundle\Repository\UsersGroupsRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        usersId:
+            type: integer
+            column: users_id
+        groupsId:
+            type: integer
+            column: groups_id
+        status:
+            type: integer
+            nullable: true
+        cretatedAt:
+            type: datetime
+            column: cretated_at
+        updatedAt:
+            type: datetime
+            column: updated_at
+    lifecycleCallbacks: {  }
