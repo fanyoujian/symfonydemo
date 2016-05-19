@@ -1,0 +1,24 @@
+AppBundle\Entity\ApiType:
+    type: entity
+    table: null
+    repositoryClass: AppBundle\Repository\ApiTypeRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        title:
+            type: string
+            length: 255
+        status:
+            type: integer
+            nullable: true
+        createdAt:
+            type: datetime
+            column: cretated_at
+        updatedAt:
+            type: datetime
+            column: updated_at
+    lifecycleCallbacks: {  }
